@@ -11,7 +11,6 @@ function App() {
     .then((res) => res.json())
     .then((transactions) => setTransactions(transactions))
   },[]);
-  
   return (
     <>
       
