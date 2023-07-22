@@ -32,10 +32,10 @@ function App() {
 
   const filterTransactions = transactions.filter((transaction) => search === "" ? true : transaction.description.includes(search));
 
-
-
-
+  function handleOnSearch (search){
+    setSearch(search);
   }
+}
   return (
     <div>
       
