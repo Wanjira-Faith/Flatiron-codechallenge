@@ -9,7 +9,7 @@ function AddTransactionForm({onSubmittng}) {
     })
 
     const handleSubmit = (e) => {
-        e.preventDefault;
+        e.preventDefault();
         onSubmittng(formData)
     }
     const handleChange = (e) => {
