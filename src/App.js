@@ -26,7 +26,7 @@ function App() {
 
       fetch("http://localhost:3001/transactions", postFormData)
       .then((r) => r.json())
-      .then((newTransac) => setTransactions((transactions) => [...transactions, newTransac]))
+      .then((newTransaction) => setTransactions((transactions) => [...transactions, newTransaction]))
       .catch((error) => alert(error));
   }
 
