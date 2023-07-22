@@ -22,7 +22,7 @@ function App() {
         "Content-Type":"application/json"
       },
       body:JSON.stringify(newTransaction)
-    };
+  };
 
       fetch("http://localhost:3001/transactions", postFormData)
       .then((r) => r.json())
@@ -35,13 +35,18 @@ function App() {
   function handleOnSearch (search){
     setSearch(search);
   }
-}
+
   return (
-    <div>
-      
+    <div className='app'>
+      <header className='app-header'>
+        Bank of FlatIron
+      </header>
+      <FilterTransaction onSearching={handleOnSearch}/>
+      <AddTransactionForm onSubmittng={handleTransactionUpdate}/>
+      <TransactionList transactions={filterTransactions}/>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
 
