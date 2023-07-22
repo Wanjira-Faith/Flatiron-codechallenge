@@ -3,7 +3,7 @@ import './App.css';
 import React, { useEffect, useState } from 'react'
 import TransactionList from './components/TransactionList';
 import AddTransactionForm from './components/AddTransactionForm';
-
+import FilterTransaction from './components/FilterTransaction';
 
 function App() {
   const [transactions, setTransactions] = useState([]);
