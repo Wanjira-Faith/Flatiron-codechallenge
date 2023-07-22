@@ -1,7 +1,7 @@
 import React from 'react'
 import Transaction from './Transaction';
 
-function TransactionList() {
+function TransactionList({transactions}) {
   return (
     <table>
       <thead>
