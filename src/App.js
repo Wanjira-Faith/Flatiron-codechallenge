@@ -14,10 +14,21 @@ function App() {
     .then((res) => res.json())
     .then((transactions) => setTransactions(transactions))
   },[]);
+
+  function handleTransactionUpdate (newTransaction){
+    const postFormData = {
+      method:"POST",
+      headers:{
+        "Content-Type":"application/json"
+      },
+      body:JSON.stringify(newTransaction)
+    };
+
+  }
   return (
-    <>
+    <div>
       
-    </>
+    </div>
   )
 }
 
