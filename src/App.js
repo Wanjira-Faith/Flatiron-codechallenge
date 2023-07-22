@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { useEffect, useState } from 'react'
+import TransactionList from './components/TransactionList';
+import AddTransactionForm from './components/AddTransactionForm';
+
 
 function App() {
   const [transactions, setTransactions] = useState([]);
