@@ -8,10 +8,17 @@ function FilterTransaction({onSearching}) {
         onSearching(search)
     }
   return (
-    <div>
-      
+    <div className="descriptions">
+      <form>
+        <input
+          value={search}
+          type="text"
+          placeholder="Search recent transactions"
+          onChange={handleSearchBar}
+        ></input>
+      </form>
     </div>
-  )
+  );
 }
 
 export default FilterTransaction
