@@ -24,6 +24,17 @@ function App() {
       body:JSON.stringify(newTransaction)
     };
 
+      fetch("http://localhost:3001/transactions", postFormData)
+      .then((r) => r.json())
+      .then((newTransac) => setTransactions((transactions) => [...transactions, newTransac]))
+      .catch((error) => alert(error));
+  }
+
+  const filterTransactions = transactions.filter((transaction) => search === "" ? true : transaction.description.includes(search));
+
+
+
+
   }
   return (
     <div>
