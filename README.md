@@ -36,7 +36,7 @@ To set up the project, follow these steps:
 
 # Technologies used
  * React
-* Json db      server
+ * Json db server
  * Css
  * Html
 
