@@ -1,7 +1,5 @@
 # FlatIron code challenge
 
-# Bank of FlatIron 
-
 # Table of Contents
 1.Introduction
 2.Project setup
