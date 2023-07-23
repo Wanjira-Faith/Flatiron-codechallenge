@@ -1,19 +1,13 @@
 # Bank of FlatIron
 
 # Table of Contents
-1.Introduction
-
-2.Project setup
-
-3.Core Deliverables
-
-4.Usage
-
-5.Technologies Used
-
-6.Author
-
-7.License
+1. Introduction
+2. Project setup
+3. Core Deliverables
+4. Usage
+5. Technologies Used
+6. Author
+7. License
 
 # Introduction
 This is a React web application that allows users to manage and view their recent bank transactions. Users can view a table of all transactions, add new transactions, and search for specific transactions based on description. The application fetches data from a local server running JSON DB server.
