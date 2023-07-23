@@ -41,7 +41,7 @@ function App() {
         Bank of FlatIron
       </header>
       <FilterTransaction onSearching={handleSearch}/>
-      <AddTransactionForm onSubmittng={handleTransactionUpdate}/>
+      <AddTransactionForm onSubmitting={handleTransactionUpdate}/>
       <TransactionList transactions={filterTransactions}/>
     </div>
   );
