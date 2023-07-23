@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function AddTransactionForm({onSubmittng}) {
+function AddTransactionForm({onSubmitting}) {
     const [formData, setFormData] = useState({
         "date":"",
         "description":"",
@@ -10,7 +10,7 @@ function AddTransactionForm({onSubmittng}) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        onSubmittng(formData)
+        onSubmitting(formData)
     }
     const handleChange = (e) => {
         setFormData({...formData,[e.target.name]:e.target.value})
