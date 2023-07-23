@@ -50,15 +50,15 @@ font-family: Arial, Helvetica, sans-serif;
   }
 }
 .form-inputs  {
-    display: flex;
-    justify-content:space-between ;
+  display: flex;
+  justify-content:space-between ;
   
 }
 #new-transaction{
 height: 80px;
-border-radius: 8px;
 border: 1px solid gray;
 padding: 5px;
+border-radius: 8px;
 margin-bottom: 10px;
 }
 
@@ -68,20 +68,22 @@ font-size: 16px;
 border-radius: 5px;
 border: 1px solid gray;
 border-style: solid; 
+transition:0.3s ease;
+outline: none;
 }
 
 .btn{
-height: 25px;
-margin-top: 5px;
+margin-top: 7px;
 cursor: pointer;
-border-radius: 5px;
-border: 1px solid rgb(3, 63, 87)
+border-radius: 8px;
+padding: 10px;
+border: none;
+background-color: rgba(128, 128, 128, 0.492);
 }
 
 table {
 width: 100%;
-border-radius: 8px;
-border-collapse: collapse;
+border-collapse: collapse ;
 }
 
 tr,td,th,table {
@@ -92,14 +94,27 @@ th {
 font-weight: 700;
 color:black;
 padding: 6px;
-
 }
 
 td {
 padding: 3px;
 }
 
-tr:hover {
-    color: rgba(52, 31, 144, 0.63);
-  
+#search-bar{
+    display: flex;
+    text-align: center;
+    border: 1px solid gray;
+    margin: 10px 0;
+    border-radius: 8px;
+    padding: 10px;
+    transition: 0.3s ease;
+  }
+#search-bar input{
+  border: none;
+  outline: none;
 }
+#new-transaction input:hover,
+#search-bar:hover {
+  border-color: lightskyblue;
+}
+
