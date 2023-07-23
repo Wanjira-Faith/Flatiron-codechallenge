@@ -79,6 +79,10 @@ border-radius: 8px;
 padding: 10px;
 border: none;
 background-color: rgba(128, 128, 128, 0.492);
+transition: 0.15s;
+}
+.btn:hover{
+  background-color: rgba(128, 128, 128, 0.863);
 }
 
 table {
