@@ -36,8 +36,8 @@ function App() {
   }
 
   return (
-    <div className='app'>
-      <header className='app-header'>
+    <div className='.App'>
+      <header className='App-header'>
         Bank of FlatIron
       </header>
       <FilterTransaction onSearching={handleSearch}/>
