@@ -1,7 +1,15 @@
-import React from 'react'
-import Transaction from './Transaction';
+import React from "react";
+import Transaction from "./Transaction";
 
-function TransactionList({transactions}) {
+function TransactionList({ transactions, search }) {
+
+  const filteredTransactions = transactions.filter((transaction) => {
+    return (
+      transaction.description.toLowerCase().includes(search.toLowerCase()) ||
+      transaction.category.toLowerCase().includes(search.toLowerCase())
+    );
+  });
+
   return (
     <table>
       <thead>
@@ -13,19 +21,20 @@ function TransactionList({transactions}) {
         </tr>
       </thead>
       <tbody>
-        {transactions.map(item => {
-            return <Transaction 
-            key={item.id} 
-            date={item.date} 
-            description={item.description} 
-            category={item.category} 
-            amount={item.amount} >       
-            </Transaction>
+        {filteredTransactions.map((item) => {
+          return (
+            <Transaction
+              key={item.id}
+              date={item.date}
+              description={item.description}
+              category={item.category}
+              amount={item.amount}
+            />
+          );
         })}
       </tbody>
     </table>
   );
 }
 
-export default TransactionList
-
+export default TransactionList;
