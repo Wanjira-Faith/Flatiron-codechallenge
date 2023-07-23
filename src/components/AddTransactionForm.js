@@ -5,7 +5,7 @@ function AddTransactionForm({onSubmitting}) {
         "date":"",
         "description":"",
         "category":"",
-        "amount":0
+        "amount":""
     })
 
     const handleSubmit = (e) => {
@@ -41,7 +41,7 @@ function AddTransactionForm({onSubmitting}) {
           value={formData.category}
         ></input>
         <input
-          type="amount"
+          type="number"
           name="amount"
           placeholder="Amount"
           onChange={handleChange}
