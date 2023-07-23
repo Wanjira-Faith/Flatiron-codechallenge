@@ -1,12 +1,18 @@
-# FlatIron code challenge
+# Bank of FlatIron
 
 # Table of Contents
 1.Introduction
+
 2.Project setup
+
 3.Core Deliverables
+
 4.Usage
+
 5.Technologies Used
+
 6.Author
+
 7.License
 
 # Introduction
