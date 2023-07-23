@@ -33,3 +33,30 @@
     transform: rotate(360deg);
   }
 }
+.form-inputs  {
+    display: flex;
+    justify-content:space-between ;
+  
+}
+#new-transaction{
+height: 80px;
+border-radius: 8px;
+border: 1px solid rgb(3, 63, 87);
+padding: 5px;
+}
+
+#new-transaction input {
+height: 25px;
+font-size: 16px;
+border-radius: 5px;
+border: 1px;
+border-style: solid;
+}
+
+.btn{
+height: 25px;
+margin-top: 5px;
+cursor: pointer;
+border-radius: 5px;
+border: 1px solid rgb(3, 63, 87)
+}
