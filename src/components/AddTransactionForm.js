@@ -17,15 +17,40 @@ function AddTransactionForm({onSubmitting}) {
      }
 
   return (
-    <form onSubmit={handleSubmit} className='new-transaction' onChange={handleChange}>
-        <label htmlFor='date'>Date</label>
-        <input type='date' name='date' onChange={handleChange} value={formData.date}></input>
-        <input type='description' name='description' placeholder='Description' onChange={handleChange} value={formData.description}></input>
-        <input type='category'name='category' placeholder='Category' onChange={handleChange} value={formData.category}></input>
-        <input type='amount'name='amount' placeholder='Amount' onChange={handleChange} value={formData.amount}></input>
-        <button className='btn'>Add Transaction</button>
+    <form onSubmit={handleSubmit} id="new-transaction" onChange={handleChange}>
+      <div className='form-inputs'>
+        <label htmlFor="date">Date</label>
+        <input
+          type="date"
+          name="date"
+          onChange={handleChange}
+          value={formData.date}
+        ></input>
+        <input
+          type="description"
+          name="description"
+          placeholder="Description"
+          onChange={handleChange}
+          value={formData.description}
+        ></input>
+        <input
+          type="category"
+          name="category"
+          placeholder="Category"
+          onChange={handleChange}
+          value={formData.category}
+        ></input>
+        <input
+          type="amount"
+          name="amount"
+          placeholder="Amount"
+          onChange={handleChange}
+          value={formData.amount}
+        ></input>
+      </div>
+      <button className="btn">Add Transaction</button>
     </form>
-  )
+  );
 }
 
 export default AddTransactionForm
