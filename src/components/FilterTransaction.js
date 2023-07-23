@@ -8,8 +8,7 @@ function FilterTransaction({onSearching}) {
         onSearching(search)
     }
   return (
-    <div className="descriptions">
-      <form>
+      <form id='search-bar'>
         <input
           value={search}
           type="text"
@@ -17,7 +16,6 @@ function FilterTransaction({onSearching}) {
           onChange={handleSearchBar}
         ></input>
       </form>
-    </div>
   );
 }
 
