@@ -23,7 +23,7 @@ function App() {
       body:JSON.stringify(newTransaction)
   };
 
-      fetch("http://localhost:3001/transactions", postFormData)
+      fetch("http://localhost:3000/transactions", postFormData)
       .then((r) => r.json())
       .then((newTransaction) => setTransactions((transactions) => [...transactions, newTransaction]))
       .catch((error) => alert(error));
