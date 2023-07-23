@@ -60,3 +60,30 @@ cursor: pointer;
 border-radius: 5px;
 border: 1px solid rgb(3, 63, 87)
 }
+
+table {
+width: 100%;
+border-radius: 8px;
+border-collapse: collapse;
+
+}
+
+tr,td,th,table {
+  border: 1px solid;
+}
+
+th {
+font-weight: 700;
+color:black;
+padding: 6px;
+
+}
+
+td {
+padding: 3px;
+}
+
+tr:hover {
+    color: rgba(52, 31, 144, 0.63);
+  
+}
