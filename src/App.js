@@ -31,7 +31,7 @@ function App() {
 
   const filterTransactions = transactions.filter((transaction) => search === "" ? true : transaction.description.includes(search));
 
-  function handleOnSearch (search){
+  function handleSearch (search){
     setSearch(search);
   }
 
@@ -40,7 +40,7 @@ function App() {
       <header className='app-header'>
         Bank of FlatIron
       </header>
-      <FilterTransaction onSearching={handleOnSearch}/>
+      <FilterTransaction onSearching={handleSearch}/>
       <AddTransactionForm onSubmittng={handleTransactionUpdate}/>
       <TransactionList transactions={filterTransactions}/>
     </div>
