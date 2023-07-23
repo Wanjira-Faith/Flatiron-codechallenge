@@ -36,7 +36,7 @@ function App() {
   }
 
   return (
-    <div className='.App'>
+    <div className='App'>
       <header className='App-header'>
         Bank of FlatIron
       </header>
