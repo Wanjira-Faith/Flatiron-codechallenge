@@ -14,25 +14,8 @@ function App() {
     .then((transactions) => setTransactions(transactions))
   },[]);
 
-  function handleTransactionUpdate (newTransaction){
-    const postFormData = {
-      method:"POST",
-      headers:{
-        "Content-Type":"application/json"
-      },
-      body:JSON.stringify(newTransaction)
-  };
-
-      fetch("", postFormData)
-      .then((r) => r.json())
-      .then((newTransaction) => setTransactions((transactions) => [...transactions, newTransaction]))
-      .catch((error) => alert(error));
-  }
-
-  const filterTransactions = transactions.filter((transaction) => search === "" ? true : transaction.description.includes(search));
-
-  function handleSearch (search){
-    setSearch(search);
+  function handleTransactionUpdate(newTransaction){
+    setTransactions(transactions => [...transactions, newTransaction])
   }
 
   return (
@@ -40,9 +23,9 @@ function App() {
       <header className='App-header'>
         Bank of FlatIron
       </header>
-      <FilterTransaction onSearching={handleSearch}/>
+      <FilterTransaction search={search} setSearch={setSearch} />
       <AddTransactionForm onSubmitting={handleTransactionUpdate}/>
-      <TransactionList transactions={filterTransactions}/>
+      <TransactionList transactions={transactions} setTransactions={setTransactions} search={search}/>
     </div>
   );
 }
