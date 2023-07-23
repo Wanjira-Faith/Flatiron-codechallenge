@@ -1,11 +1,9 @@
 import React, { useState } from 'react'
 
-function FilterTransaction({onSearching}) {
-    const [search, setSearch] = useState("")
+function FilterTransaction({search,setSearch}) {
 
     function handleSearchBar (e){
         setSearch(e.target.value)
-        onSearching(search)
     }
   return (
       <form id='search-bar'>
@@ -20,3 +18,6 @@ function FilterTransaction({onSearching}) {
 }
 
 export default FilterTransaction
+
+
+

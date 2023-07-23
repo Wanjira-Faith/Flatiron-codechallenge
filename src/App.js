@@ -23,12 +23,10 @@ function App() {
       body:JSON.stringify(newTransaction)
   };
 
-      fetch("http://localhost:3000/transactions", postFormData)
-        .then((r) => r.json())
-        .then((newTransaction) =>
-          setTransactions((transactions) => [...transactions, newTransaction])
-        )
-        .catch((error) => alert(error));
+      fetch("", postFormData)
+      .then((r) => r.json())
+      .then((newTransaction) => setTransactions((transactions) => [...transactions, newTransaction]))
+      .catch((error) => alert(error));
   }
 
   const filterTransactions = transactions.filter((transaction) => search === "" ? true : transaction.description.includes(search));
