@@ -18,14 +18,16 @@ function AddTransactionForm({onSubmitting}) {
 
   return (
     <form onSubmit={handleSubmit} id="new-transaction" onChange={handleChange}>
-      <div className='form-inputs'>
-        <label htmlFor="date">Date</label>
-        <input
-          type="date"
-          name="date"
-          onChange={handleChange}
-          value={formData.date}
-        ></input>
+      <div className="form-inputs">
+        <label htmlFor="date">
+          Date
+          <input
+            type="date"
+            name="date"
+            onChange={handleChange}
+            value={formData.date}
+          ></input>
+        </label>
         <input
           type="description"
           name="description"
