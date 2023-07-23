@@ -70,6 +70,7 @@ border: 1px solid gray;
 border-style: solid; 
 transition:0.3s ease;
 outline: none;
+text-align: center;
 }
 
 .btn{
