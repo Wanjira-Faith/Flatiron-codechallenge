@@ -8,7 +8,7 @@ function Transaction({date,description,category,amount,onDelete}) {
       <td>{category}</td>
       <td>{amount}</td>
       <td>
-        <button onClick={onDelete}>Delete</button>
+        <button className='delete-btn' onClick={onDelete}>Delete</button>
       </td>
     </tr>
   );
