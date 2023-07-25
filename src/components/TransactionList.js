@@ -1,7 +1,7 @@
 import React from "react";
 import Transaction from "./Transaction";
 
-function TransactionList({ transactions, search }) {
+function TransactionList({ transactions, search, onDelete }) {
 
   const filteredTransactions = transactions.filter((transaction) => {
     return (
@@ -29,6 +29,7 @@ function TransactionList({ transactions, search }) {
               description={item.description}
               category={item.category}
               amount={item.amount}
+              onDelete={() => onDelete(item.id)}
             />
           );
         })}

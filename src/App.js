@@ -18,6 +18,12 @@ function App() {
     setTransactions(transactions => [...transactions, newTransaction])
   }
 
+   function handleDeleteTransaction(id) {
+     setTransactions((transactions) =>
+       transactions.filter((transaction) => transaction.id !== id)
+     );
+   }
+
   return (
     <div className='App'>
       <header className='App-header'>
@@ -25,7 +31,7 @@ function App() {
       </header>
       <FilterTransaction search={search} setSearch={setSearch} />
       <AddTransactionForm onSubmitting={handleTransactionUpdate}/>
-      <TransactionList transactions={transactions} setTransactions={setTransactions} search={search}/>
+      <TransactionList transactions={transactions} setTransactions={setTransactions} search={search} onDelete={handleDeleteTransaction}/>
     </div>
   );
 }
