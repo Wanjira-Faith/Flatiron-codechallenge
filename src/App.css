@@ -82,7 +82,8 @@ border: none;
 background-color: rgba(128, 128, 128, 0.492);
 transition: 0.15s;
 }
-.btn:hover{
+.btn:hover,
+.delete-btn:hover{
   background-color: rgba(128, 128, 128, 0.863);
 }
 
@@ -121,5 +122,13 @@ padding: 3px;
 #new-transaction input:hover,
 #search-bar:hover {
   border-color: lightskyblue;
+}
+
+.delete-btn {
+  background-color: rgba(0, 0, 128, 0.492);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
